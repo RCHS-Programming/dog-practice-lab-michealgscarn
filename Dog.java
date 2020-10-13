@@ -14,18 +14,18 @@ public class Dog
   
   public Dog( String n, int a )  
   {
-	 //fill in this constructor
+    age = a;
+    name = n;
   }
   
   public void increaseAgeByOne()
   {
-  	 //fill in this method
+  	age++;
   }
   
   public int getDogYears( int scale )
   {
-  	 //fill in this method
-  	 return 0;
+  	 return age*scale;
   }
 	
   public int getAge()    {
@@ -36,7 +36,7 @@ public class Dog
     return name;
   }
 	
-//   public String toString()    {
-//     return "Dog - " + name + " " + age;
-//   }
+   public String toString()    {
+     return "Dog - " + name + " " + age;
+   }
 }
